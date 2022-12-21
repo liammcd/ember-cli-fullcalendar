@@ -166,9 +166,13 @@ export default class DayGridCalendarComponent extends CalendarComponent {
   get firstDay () {
     return getWithDefault (this.args, 'firstDay', 0);
   }
-  
+
   get initialDate () {
     return this.args.initialDate;
+  }
+
+  get events () {
+    return this.args.events;
   }
 
   doPrepareOptions (options) {
@@ -226,6 +230,8 @@ export default class DayGridCalendarComponent extends CalendarComponent {
 
       dateClick: this.click.bind (this),
       datesSet: this.datesSet.bind (this),
+
+      events: this.events,
     })
 
     return options;
