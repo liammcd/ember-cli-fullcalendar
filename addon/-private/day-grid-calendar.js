@@ -231,7 +231,8 @@ export default class DayGridCalendarComponent extends CalendarComponent {
       datesSet: this.datesSet.bind (this),
 
       events: this.events,
-      eventClick: this.click.bind (this)
+      eventClick: this.click.bind (this),
+      eventDragStop: this.eventDragStop.bind (this)
     })
 
     return options;
@@ -239,6 +240,10 @@ export default class DayGridCalendarComponent extends CalendarComponent {
 
   click (ev) {
     (this.args.click || noOp) (ev);
+  }
+
+  eventDragStop (ev) {
+    (this.args.eventDragStop || noOp) (ev);
   }
 
   select (ev) {
