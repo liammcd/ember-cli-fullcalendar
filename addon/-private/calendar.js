@@ -1,7 +1,6 @@
 import Component from "@glimmer/component";
 import { action } from '@ember/object';
 import { Calendar } from '@fullcalendar/core';
-import { interactionPlugin } from '@fullcalendar/interaction';
 import { isPresent } from '@ember/utils';
 
 export default class CalendarComponent extends Component {
@@ -9,7 +8,7 @@ export default class CalendarComponent extends Component {
 
   @action
   didInsert (element) {
-    let options = this.doPrepareOptions ({plugins: [ interactionPlugin ]});
+    let options = this.doPrepareOptions ({plugins: []});
     this._calendar = new Calendar (element, options);
     this._calendar.render ();
   }
