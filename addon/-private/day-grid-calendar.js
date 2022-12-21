@@ -228,10 +228,10 @@ export default class DayGridCalendarComponent extends CalendarComponent {
       slotLaneDidMount: this.slotLaneDidMount.bind (this),
       slotLaneWillUnmount: this.slotLaneWillUnmount.bind (this),
 
-      dateClick: this.click.bind (this),
       datesSet: this.datesSet.bind (this),
 
       events: this.events,
+      eventClick: this.click.bind (this)
     })
 
     return options;
