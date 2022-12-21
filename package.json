@@ -1,11 +1,11 @@
 {
-  "name": "@onehilltech/ember-cli-fullcalendar",
+  "name": "@liammcd/ember-cli-fullcalendar",
   "version": "0.10.1",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "onehilltech/ember-cli-fullcalendar",
+  "repository": "liammcd/ember-cli-fullcalendar",
   "license": "Apache-2.0",
   "author": "One Hill Technologies, LLC",
   "directories": {
