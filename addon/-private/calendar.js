@@ -75,6 +75,11 @@ export default class CalendarComponent extends Component {
     this._calendar.incrementDate (duration);
   }
 
+  @action
+  rerenderEvents () {
+    this._calendar.rerenderEvents();
+  }
+
   get validRange () {
     const { startDate, endDate } = this.args;
 
