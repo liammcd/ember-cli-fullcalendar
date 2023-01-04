@@ -77,7 +77,8 @@ export default class CalendarComponent extends Component {
 
   @action
   rerenderEvents () {
-    this._calendar.rerenderEvents();
+    this._calendar.removeAllEvents();
+    this._calendar.addEventSource(this.args.events);
   }
 
   get validRange () {

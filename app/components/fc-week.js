@@ -1,1 +1,1 @@
-export { default } from '@liammcd/ember-cli-fullcalendar/components/fc-week';
+export { default } from 'ember-cli-fullcalendar/components/fc-week';
