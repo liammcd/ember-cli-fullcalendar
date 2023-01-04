@@ -25,7 +25,7 @@
     "@fullcalendar/daygrid": "^5.5.0",
     "@fullcalendar/interaction": "^5.5.0",
     "css-loader": "^5.0.1",
-    "ember-auto-import": "^1.5.3",
+    "ember-auto-import": "^1.10.1",
     "ember-cli-babel": "^7.17.2",
     "ember-cli-htmlbars": "^4.2.2",
     "fullcalendar": "^5.5.1"
