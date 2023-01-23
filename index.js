@@ -15,6 +15,20 @@ module.exports = {
       development: 'node_modules/@fullcalendar/daygrid/main.css',
       production: 'node_modules/@fullcalendar/daygrid/main.min.css'
     })
-  }
+  },
 
+  options: {
+    autoImport:{
+      webpack: {
+        module: {
+          rules: [
+            {
+              test: /\.css$/i,
+              use: ['css-loader'],
+            },
+          ],
+        }
+      }
+    }
+  }
 };
