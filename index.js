@@ -7,8 +7,8 @@ module.exports = {
     this._super.call (this, ...arguments);
 
     app.import ({
-      development: 'node_modules/@fullcalendar/core/main.css',
-      production: 'node_modules/@fullcalendar/core/main.min.css'
+      development: 'node_modules/@fullcalendar/common/main.css',
+      production: 'node_modules/@fullcalendar/common/main.min.css'
     });
 
     app.import ({
