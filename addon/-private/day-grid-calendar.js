@@ -175,6 +175,10 @@ export default class DayGridCalendarComponent extends CalendarComponent {
     return this.args.events;
   }
 
+  get eventOrder () {
+    return this.args.eventOrder;
+  }
+
   doPrepareOptions (options) {
     options = super.doPrepareOptions (options);
     options.plugins.push (dayGridPlugin, interactionPlugin);
@@ -232,6 +236,7 @@ export default class DayGridCalendarComponent extends CalendarComponent {
       dateClick: this.dateClick.bind (this),
 
       events: this.events,
+      eventOrder: this.eventOrder,
       eventClick: this.click.bind (this),
       eventDragStop: this.eventDragStop.bind (this),
       eventDrop: this.eventDrop.bind (this),
