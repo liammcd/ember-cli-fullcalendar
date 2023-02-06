@@ -21,9 +21,9 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "@fullcalendar/core": "^5.5.1",
-    "@fullcalendar/daygrid": "^5.5.0",
-    "@fullcalendar/interaction": "^5.5.0",
+    "@fullcalendar/core": "5.11.3",
+    "@fullcalendar/daygrid": "5.11.3",
+    "@fullcalendar/interaction": "5.11.3",
     "css-loader": "^5.0.1",
     "ember-auto-import": "^1.10.1",
     "ember-cli-babel": "^7.17.2",
